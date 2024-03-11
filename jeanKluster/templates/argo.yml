@@ -24,7 +24,7 @@ spec:
 
   source:
     path: localApps/kusto-argo
-    repoURL: https://github.com/rdartus/k3s-argo.git
+    repoURL: https://github.com/rdartus/k3s-argo2.git
     targetRevision: main
   destination:
     server: {{ .Values.dest_server }}
