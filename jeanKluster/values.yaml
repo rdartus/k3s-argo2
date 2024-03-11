@@ -1,0 +1,18 @@
+dest_server : https://kubernetes.default.svc
+default_folder_app : localApps
+
+db :
+  appName: cnpg-cluster-rw
+  namespace: cnpg
+  arr_user: jeank
+  arr_userPass: pdpdpd
+  auth_user: auth
+  auth_userPass: pdpdpd
+  superuserPass: postgres
+
+arr:
+  user : jeank
+  userPass : pdpdpd
+
+job: true
+longhorn : true
