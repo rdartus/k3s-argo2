@@ -537,8 +537,7 @@ server:
   postStart:
   - /bin/sh
   - -c
-  - "/bin/sh /config/scripts/initScript.sh 2>&1 | tee /config/cred/log.txt"
-  - "vault status"
+  - "/bin/sh /config/scripts/initScript.sh 2>&1 | ts '[%Y-%m-%d %H:%M:%S]'| tee -a /config/cred/log.txt"
 
   # extraEnvironmentVars is a list of extra environment variables to set with the stateful set. These could be
   # used to include variables required for auto-unseal.
